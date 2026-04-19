@@ -228,8 +228,18 @@ export default function CityPage({ params }: Props) {
       </section>
 
       {/* AdSense sticky mobile */}
-      <div className="sticky bottom-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg max-h-[90px] overflow-hidden">
-  <AdBanner slot="9988776655" format="horizontal" />
+<div 
+  className="sticky bottom-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg" 
+  style={{ 
+    height: '90px', 
+    maxHeight: '90px',
+    overflow: 'hidden',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }}
+>
+  <AdBanner slot="9988776655" format="auto" />
 </div>
     </div>
   )
