@@ -174,9 +174,9 @@ export default async function HomePage() {
       </section>
 
       {/* ── AdSense #3 — sticky bottom (mobile) ─────────── */}
-      <div className="sticky bottom-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg">
-        <AdBanner slot="1122334455" format="auto" label="Iklan" className="py-1 px-2" />
-      </div>
+      <div className="sticky bottom-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg max-h-[90px] overflow-hidden">
+  <AdBanner slot="1122334455" format="horizontal" label="Iklan" className="py-1 px-2" />
+</div>
     </>
   )
 }
