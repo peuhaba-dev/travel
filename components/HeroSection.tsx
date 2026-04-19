@@ -55,12 +55,12 @@ export default function HeroSection() {
             style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}
           >
             Jelajahi Keindahan{' '}
-            <span className="text-aceh-gold">Tanah Rencong</span>
+            <span className="text-aceh-gold">Tanoh Rencong</span>
           </h1>
 
           {/* Sub */}
           <p className="font-body text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-            Dari Sabang hingga Subulussalam — temukan wisata, kuliner, penginapan,
+            Dari Sabang hingga Singkil — temukan wisata, kuliner, penginapan,
             dan pengalaman tak terlupakan di seluruh pelosok Aceh.
           </p>
 
