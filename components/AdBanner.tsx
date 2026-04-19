@@ -42,7 +42,7 @@ export default function AdBanner({
   return (
     <div
       className={`relative overflow-hidden ${className}`}
-      style={{ minHeight: 90 }}
+      style={{ minHeight: 50, maxHeight: 90 }}
     >
       {/* Label */}
       <p className="absolute top-1 left-2 text-[10px] text-gray-400 font-body uppercase tracking-wider z-10">
