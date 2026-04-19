@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --aceh-green: #1B4332;
+    --aceh-dark:  #0D2B1F;
+    --aceh-gold:  #D4A017;
+    --aceh-amber: #E8B84B;
+    --aceh-cream: #FAFAF7;
+    --aceh-sand:  #F5F0E8;
+    --aceh-teal:  #0D7C66;
+    --aceh-light: #52B788;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-aceh-green text-white font-body font-semibold rounded-full
+           hover:bg-aceh-dark transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-aceh-gold text-aceh-dark font-body font-semibold rounded-full
+           hover:bg-aceh-amber transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-aceh-green;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold font-body;
+  }
+
+  .tab-active {
+    @apply bg-aceh-green text-white shadow-md;
+  }
+
+  .tab-inactive {
+    @apply bg-white text-gray-600 hover:bg-aceh-sand border border-gray-200;
+  }
+
+  /* Skeleton loading */
+  .skeleton {
+    @apply bg-gray-200 rounded animate-pulse;
+  }
+
+  /* Batik border decoration */
+  .batik-border {
+    position: relative;
+  }
+  .batik-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--aceh-gold);
+    border-radius: inherit;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: var(--aceh-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--aceh-green); }
